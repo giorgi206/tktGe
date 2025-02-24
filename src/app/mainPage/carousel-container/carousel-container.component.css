@@ -1,0 +1,15 @@
+.carousel-item img{
+    width: 984px;
+    height: 328px;
+    border-radius: 20px;
+}
+.carousel-inner{
+    width: 1000px;
+}
+.carousel-item{
+    width: 100%;
+}
+.carousel{
+    width: 1000px;
+}
+

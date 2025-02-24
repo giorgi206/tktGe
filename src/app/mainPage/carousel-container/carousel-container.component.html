@@ -1,0 +1,30 @@
+<div id="carouselExampleFade" class="carousel slide carousel-fade" >
+    <div class="carousel-inner" >
+      <div class="carousel-item active" *ngFor="let card of banners" >
+        <img [src]="card.desktopImage"  alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- <div class="pinnedEvents_mainContainer">
+    <nz-carousel >
+      <ng-container *ngFor="let pinnedEvent of banners">
+          <div >
+            <a  class="desktopImage">
+              <img [src]="pinnedEvent.desktopImage" alt="">
+            </a>
+
+          </div>
+      </ng-container>
+    </nz-carousel>
+</div>
+ -->
+
