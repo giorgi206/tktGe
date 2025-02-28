@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { SwiperModule } from 'swiper/types';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './allComponents/nav-bar/nav-bar.component';
@@ -14,7 +14,11 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
-import { rgbToHsv, rgbToHex, inputToRGB } from '@ctrl/tinycolor'
+import { rgbToHsv, rgbToHex, inputToRGB } from '@ctrl/tinycolor';
+import { PopularComponent } from './mainPage/popular/popular.component';
+
+
+import { CarouselModule } from 'primeng/carousel';
 registerLocaleData(en);
 
 
@@ -26,6 +30,8 @@ registerLocaleData(en);
     NavBarComponent,
     CarouselContainerComponent,
     HomePageComponent,
+    PopularComponent,
+   
     
   ],
   imports: [
@@ -34,6 +40,9 @@ registerLocaleData(en);
     HttpClientModule,
     FormsModule,
     NzCarouselModule,
+    CarouselModule,
+    
+   
     
   ],
   providers: [

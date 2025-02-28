@@ -1,0 +1,20 @@
+
+<div class="popular">
+    <div class="title">
+        <h1>პოპულარული</h1>
+    </div>
+    <div class="card-slider">
+        <button class="prev-btn" [hidden]="currentIndex === 0" (click)="prevCard()"><span _ngcontent-ng-c3225225303="" aria-hidden="true" class="carousel-control-prev-icon"></span></button>
+        <div class="card-container">
+          <div *ngFor="let card of popularCards.slice(currentIndex, currentIndex + 4)" class="card">
+            <img [src]="'https://static.tkt.ge/img/' + card.imageName" alt="">
+            <div class="info">
+                <h6>{{card.eventName}}</h6>
+                <p>{{card.venueName}}</p>
+                <h4>kvira</h4>
+            </div>   
+          </div>
+        </div>
+        <button class="next-btn" (click)="nextCard()" [hidden]="currentIndex === popularCards.length - 4"><span _ngcontent-ng-c3225225303="" aria-hidden="true" class="carousel-control-next-icon"></span></button>
+    </div>
+</div>

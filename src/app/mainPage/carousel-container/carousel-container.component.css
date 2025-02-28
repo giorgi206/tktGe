@@ -1,17 +1,19 @@
 .carousel-item img{
-    width: 984px;
+    width: 1100px;
     height: 328px;
     border-radius: 20px;
 }
 .carousel-inner{
-    width: 1000px;
+  width: 1181px;
+    border-radius: 20px;
 }
 .carousel-item{
     width: 100%;
     position: relative;
+
 }
 .carousel{
-    width: 1000px;
+    width: 1181px
 }
 .circle{
     position: absolute;
@@ -49,7 +51,7 @@
   width: 60px !important;
   height: 60px !important;
   border-radius: 50% !important;
-  background-color: #fffgit !important;
+  background-color: #fff !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
   box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);

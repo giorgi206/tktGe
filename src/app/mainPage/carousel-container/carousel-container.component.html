@@ -1,40 +1,28 @@
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div *ngFor="let card of banners; let i = index" 
            class="carousel-item" 
            [class.active]="i === 0">
-        <img [src]="card.desktopImage" class="d-block w-100" alt="Banner Image">
+        <a (click)="show(card.itemId)">
+          <img [src]="card.desktopImage" class="d-block w-100" alt="Banner Image">
+        </a>
         <div class="circle"></div>
         <div class="circle2"></div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 
-  <!-- <div class="pinnedEvents_mainContainer">
-    <nz-carousel >
-      <ng-container *ngFor="let pinnedEvent of banners">
-          <div >
-            <a  class="desktopImage">
-              <img [src]="pinnedEvent.desktopImage" alt="">
-            </a>
-
-          </div>
-      </ng-container>
-    </nz-carousel>
-</div>
- -->
 
 
-
-
-
-
-
+    
+    
+    
+ 
